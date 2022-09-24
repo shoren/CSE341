@@ -12,7 +12,7 @@ app
         res.setHeader('Access-Control-Allow-Origin','*');
         next();
     }) 
-    .use('/', require('./backend/routes')); // This will reference the routes for where the files  to look for and will use index as a default if not specified 
+    .use('/', require('./routes')); // This will reference the routes for where the files  to look for and will use index as a default if not specified 
 
 
 mongodb.initDb((err, mongodb) => {
