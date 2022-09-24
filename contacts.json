@@ -1,0 +1,23 @@
+{
+    "contact1": {
+        "firstName":"Matthew",
+        "lastName":"Bryant",
+        "email":"MatthewBryant@gmail.com",
+        "favoriteColor":"Blue",
+        "Birthday":"12/25/00"
+    },
+    "contact2": {
+        "firstName":"Caleb",
+        "lastName":"Brownie",
+        "email":"CalebBrownie@gmail.com",
+        "favoriteColor":"Green",
+        "Birthday":"7/29/98"
+    },
+    "contact3": {
+        "firstName":"Eli",
+        "lastName":"Wensil",
+        "email":"EliWensil@gmail.com",
+        "favoriteColor":"Red",
+        "Birthday":"1/28/97"
+    }
+}
