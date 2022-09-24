@@ -20,6 +20,5 @@
   "homepage": "https://github.com/shoren/CSE341#readme",
   "dependencies": {
     "express": "^4.18.1"
-  },
-  "devDependencies": {}
+  }
 }
