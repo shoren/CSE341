@@ -2,22 +2,22 @@
     "contact1": {
         "firstName":"Matthew",
         "lastName":"Bryant",
-        "email":"MatthewBryant@gmail.com",
+        "email":"MatthewBryant@test.com",
         "favoriteColor":"Blue",
         "Birthday":"12/25/00"
     },
     "contact2": {
         "firstName":"Caleb",
         "lastName":"Brownie",
-        "email":"CalebBrownie@gmail.com",
+        "email":"CalebBrownie@test.com",
         "favoriteColor":"Green",
-        "Birthday":"7/29/98"
+        "Birthday":"07/29/98"
     },
     "contact3": {
         "firstName":"Eli",
         "lastName":"Wensil",
-        "email":"EliWensil@gmail.com",
+        "email":"EliWensil@test.com",
         "favoriteColor":"Red",
-        "Birthday":"1/28/97"
+        "Birthday":"01/28/97"
     }
 }
