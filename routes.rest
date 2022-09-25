@@ -20,5 +20,3 @@ GET http://localhost:8080/contacts/632e74c4f82c1783bd83483a
 ###
 GET http://localhost:8080/contacts/632e74c4f82c1783bd83483b
 ###
-//I cannot get any of these to work and I don't know why
-//I think the problem is not in this file though
