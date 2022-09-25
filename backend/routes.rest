@@ -12,7 +12,7 @@ GET https://assign1.onrender.com/
 
 //Locally
 ###
-GET http://localhost:8080/contacts
+GET http://localhost:8080/Test/contacts
 ###
 GET http://localhost:8080/contacts/632e74c4f82c1783bd834839
 ###
