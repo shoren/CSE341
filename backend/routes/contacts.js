@@ -2,7 +2,7 @@
 const express = require('express');
 // const routes = require ('express').Router();
 const router = express.Router();
-const contactsController = require('../controller/contacts');
+const contactsController = require('../controller/contacts.controller');
 
 // Get all of the documents in the contacts collection
 router.get('/', contactsController.getAll);
