@@ -1,13 +1,15 @@
-//Production
+//Real Time 
+//Grab all the contacts
 GET https://assign1.onrender.com/contacts 
 ###
+//grab one of the contacts by id
 GET https://assign1.onrender.com/contacts/632e74c4f82c1783bd834839 
 ###
 GET https://assign1.onrender.com/contacts/632e74c4f82c1783bd83483a 
 ###
 GET https://assign1.onrender.com/contacts/632e74c4f82c1783bd83483b
 
-###
+### initial site
 GET https://assign1.onrender.com/
 
 //Locally
