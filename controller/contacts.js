@@ -49,7 +49,7 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
     };
 
     const result = await mongodb.getDb().db('Test').collection('contacts').replaceOne({ _id: userId },contact); //replaceOne
-    if(response.acknowledged){
+    if(result.acknowledged){
       res.status(204).send();
     }
   };
