@@ -57,8 +57,8 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
   // DELETE
   const deleteContact = async (req, res, next) => {
     const userId = new ObjectId(req.params.id);
-    const result = await mongodb.getDb().db('Test').collection('contacts').remove({ _id: userId },True); // Remove
-    console.log(response);
+    const result = await mongodb.getDb().db('Test').collection('contacts').remove({ _id: userId },true); // Remove
+    console.log(result);
     req.status(204).send();
   };
   
