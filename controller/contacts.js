@@ -54,12 +54,12 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
     }
   };
 
-  // DELETE
+  // DELETE  works
   const deleteContact = async (req, res, next) => {
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDb().db('Test').collection('contacts').remove({ _id: userId },true); // Remove
     console.log(result);
-    res.status(204).send();
+    res.status(200).send();
   };
   
   module.exports = { getAll,getSingle,createContact,updateContact,deleteContact };
