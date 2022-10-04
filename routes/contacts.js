@@ -8,10 +8,13 @@ const contactsController = require('../controller/contacts');
 router.get('/', contactsController.getAll);
 
 // Get one of the documents in the contacts collection
+//GET REQUEST
 router.get('/:id', contactsController.getSingle);
-
-// routes.get('/',(req, res) =>{
-//     res.send('Caleb Brownie');
-// });
+//POST
+router.post('/', contactsController.createContact);
+//PUT
+router.put('/:id', contactsController.updateContact);
+//DELETE
+router.delete('/:id', contactsController.deleteContact);
 
 module.exports = router;
