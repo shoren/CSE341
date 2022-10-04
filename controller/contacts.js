@@ -33,10 +33,9 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
       birthday: req.body.birthday,
     };
     const result = await mongodb.getDb().db('Test').collection('contacts').insertOne(contact);
-    result.toArray().then((lists) => {
-      res.setHeader('Content-Type', 'application/json');
-      res.status(201).json(lists);
-    });
+    if(result.acknowledged){
+      req.status(201).json(response);
+    }
   };
 
   // PUT
