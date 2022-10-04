@@ -50,7 +50,7 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
 
     const result = await mongodb.getDb().db('Test').collection('contacts').replaceOne({ _id: userId },contact); //replaceOne
     if(response.acknowledged){
-      req.status(204).send();
+      res.status(204).send();
     }
   };
 
@@ -59,7 +59,7 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDb().db('Test').collection('contacts').remove({ _id: userId },true); // Remove
     console.log(result);
-    req.status(204).send();
+    res.status(204).send();
   };
   
   module.exports = { getAll,getSingle,createContact,updateContact,deleteContact };
