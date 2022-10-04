@@ -31,13 +31,13 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
     };
     const result = await mongodb.getDb().db('Test').collection('contacts').insertOne(contact); //insertOne
     if(result.acknowledged){
-      req.status(201).json(response);
+      res.status(201).json(response);
     } else {
       res.status(500).json(response.error || 'Some error occurred while creating the contact.');
     }
   };
 
-  // PUT
+  // PUT working
   const updateContact = async (req, res, next) => {
     const userId = new ObjectId(req.params.id);
     const contact = {

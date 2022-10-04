@@ -29,20 +29,20 @@ GET http://localhost:8080/contacts/632e74c4f82c1783bd83483a
 ###
 GET http://localhost:8080/contacts/632e74c4f82c1783bd83483b
 ###
-# It crashes when I do the post but it still creates the contact
+#
 POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
     "firstName":"Sanchez",
     "lastName":"Tony",
-    "email":"test@test.com",
+    "email":"not@test.com",
     "favoriteColor":"Green",
     "birthday":"21/21/2012"
 }
 
 ###
-PUT http://localhost:8080/contacts/633b9b3fdc1d419697302321 HTTP/1.1
+PUT http://localhost:8080/contacts/633b9de43902ffc9753fa30a HTTP/1.1
 Content-Type: application/json
 
 {
@@ -54,5 +54,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/contacts/633b9b3fdc1d419697302321 HTTP/1.1
+DELETE http://localhost:8080/contacts/633b9de43902ffc9753fa30a HTTP/1.1
 
