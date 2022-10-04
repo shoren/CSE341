@@ -31,8 +31,8 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
       email: req.body.email,
       favoriteColor: req.body.favoriteColor,
       birthday: req.body.birthday,
-    }
-    const result = await mongodb.getDb().db('Test').collection('contacts').find();
+    };
+    const result = await mongodb.getDb().db('Test').collection('contacts').insertOne(contact);
     result.toArray().then((lists) => {
       res.setHeader('Content-Type', 'application/json');
       res.status(201).json(lists);
