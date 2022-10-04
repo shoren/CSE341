@@ -25,6 +25,13 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
 
   //POST
   const createContact = async (req, res, next) => {
+    const contact = {
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      email: req.body.email,
+      favoriteColor: req.body.favoriteColor,
+      birthday: req.body.birthday,
+    }
     const result = await mongodb.getDb().db('Test').collection('contacts').find();
     result.toArray().then((lists) => {
       res.setHeader('Content-Type', 'application/json');
