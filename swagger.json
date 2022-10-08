@@ -5,7 +5,7 @@
     "description": "Temple API",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "",
   "basePath": "/",
   "schemes": [
     "http"
@@ -13,7 +13,7 @@
   "paths": {
     "/contacts/": {
       "get": {
-        "description": "",
+        "description": "Get the contacts",
         "produces": [
           "application/json"
         ],
