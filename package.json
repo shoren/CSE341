@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shoren/CSE341.git"
+    "url": "git+https://github.com/shoren/341Week05.git"
   },
   "keywords": [],
   "author": "Nathan Shore",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shoren/CSE341/issues"
+    "url": "https://github.com/shoren/341Week05/issues"
   },
-  "homepage": "https://github.com/shoren/CSE341#readme",
+  "homepage": "https://github.com/shoren/341Week05#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
