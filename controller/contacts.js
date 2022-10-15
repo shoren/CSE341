@@ -10,7 +10,7 @@ const getAll = async (req, res, next) => { //Have to put the name of the Databas
     });
   };
 
-  // GET fdsfs
+  // GET
   const getSingle = async (req, res, next) => {
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDb().db('Test').collection('contacts').find({ _id: userId }); //Find
